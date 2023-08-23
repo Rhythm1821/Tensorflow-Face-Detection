@@ -1,5 +1,30 @@
 # Face Detection Project
 
+## Cloning and Running
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   
+<pre>
+git clone https://github.com/Rhythm1821/Tensorflow-Face-Detection.git
+</pre>
+
+2. Navigate to the project directory:
+
+<pre>
+cd Tensorflow-Face-Detection
+</pre>
+
+3. Install the required dependencies:
+<pre>
+pip install -r requirements.txt
+</pre>
+   
+4. Run the real-time face detection Python file:
+<pre>
+python3 main.py
+</pre>
+
 ## Introduction
 
 Welcome to the Face Detection Project! This project aims to implement a robust system detects the face using computer vision techniques and deep learning. It encompasses various stages, from data collection and preprocessing to model building and deployment. This README provides an overview of the project and its key components.
@@ -16,7 +41,6 @@ Welcome to the Face Detection Project! This project aims to implement a robust s
 * Model Training and Evaluation
 * Predictions and Model Deployment
 * Real-Time Face Detection
-* Cloning and Running
 
 ## Project Overview
 
@@ -56,26 +80,3 @@ Post-training, the model's predictions are tested on the test dataset, exhibitin
 ## Real-Time Face Detection
 
 Taking a step further, the project showcases the creation of a real-time face detection system using OpenCV. The trained model is incorporated to detect faces in real-time video streams, illustrating the practical application of the developed model.
-
-## Cloning and Running
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-   
-<pre>
-```shell
-git clone https://github.com/Rhythm1821/Tensorflow-Face-Detection.git
-```
-</pre>
-
-2. Navigate to the project directory:
-
-cd Tensorflow-Face-Detection
-
-3. Install the required dependencies:
-
-pip install -r requirements.txt
-
-4. Run the real-time face detection Python file:
-
-python3 main.py
