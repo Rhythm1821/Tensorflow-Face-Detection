@@ -62,7 +62,9 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 
+"""shell
 git clone https://github.com/Rhythm1821/Tensorflow-Face-Detection.git
+
 
 2. Navigate to the project directory:
 
