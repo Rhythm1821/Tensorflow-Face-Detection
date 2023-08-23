@@ -34,7 +34,7 @@ Welcome to the Face Detection Project! This project aims to implement a robust s
 * Project Overview
 * Data Collection and Annotation
 * Data Preprocessing
-* Data augmentation
+* Data augmentation and and scaling
 * Model Building
 * Custom Loss Function
 * Custom Model Class
@@ -48,18 +48,21 @@ The Face Detection Project showcases the process of implementing a face detectio
 
 ## Data Collection and Annotation
 
-The project starts with the collection of image data using OpenCV. These images are then annotated using LabelMe, enabling the creation of labeled data with bounding boxes around the faces.
+The first step is collecting the data. Using OpenCV, a popular computer vision library, images were captured. These images then underwent annotation for face detection using LabelMe, enabling the drawing of bounding boxes around the faces to create labeled data.
 
 ## Data Preprocessing
 
-The annotated data is organized and stored in separate folders for images and labels. Google Colab is utilized to access the data, and TensorFlow's data pipeline is employed to load and preprocess the images. 
+The annotated data was organized and stored in separate folders for images and labels. Google Colab facilitated access to the data by importing and unzipping the data folders from a GitHub repository. TensorFlow's data pipeline was employed, utilizing tf.data.Dataset and a custom data loading function. The images were loaded using TensorFlow's image decoding functions.
 
-## Data augmentation
-Data augmentation is applied using Albumentations, enhancing the model's robustness. The images are scaled to a range of 0-1 for neural network training.
+## Data augmentation and scaling
+To enhance model robustness, data augmentation was applied using Albumentations. This technique involves introducing variations in the images, like rotations, flips, and changes in brightness. The augmented data was stored separately from the original data.
+
+Images were then scaled to the range of 0-1 by dividing by 255, a standard practice in neural network training.
 
 ## Model Building
 
-The heart of the project lies in building a deep learning model. A VGG16 model forms the base, with additional Dense and Convolutional layers added for task-specific performance. The model handles both classification and regression tasks concurrently.
+For the core of the project, a deep learning model was developed. The architecture included a pre-trained VGG16 model as a base and additional Dense and Convolutional layers. The model outputs were designed to handle both classification and regression tasks simultaneously.
+
 
 ## Custom Loss Function
 
